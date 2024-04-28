@@ -1,0 +1,41 @@
+* {
+    border: 0;
+    padding: 2;
+    margin: 2;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+}
+
+input {
+    height: 2em;
+}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+button:active { 
+    transform: scale(0.98);
+}

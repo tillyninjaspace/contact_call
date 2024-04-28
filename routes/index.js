@@ -33,7 +33,7 @@ apiRouter.post("/send", (req, res) => {
     const mail = {
       from: name,
       to: EMAIL,
-      subject: "Contact Form Submission via Sailor Moon website",
+      subject: "Contact Form Submission via Contact Form website",
       html: `<p>Name: ${name}</p>
              <p>Email: ${email}</p>
              <p>Message: ${message}</p>`,
@@ -45,7 +45,7 @@ apiRouter.post("/send", (req, res) => {
         res.json({ status: "ERROR. Message not sent." });
       } else {
         res.json({ status: "Message Sent." });
-        console.log("Message successfully sent")
+        console.log("Message successfully sent.")
       }
     });
 });

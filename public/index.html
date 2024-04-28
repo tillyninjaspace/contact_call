@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
 </head>
 <body>
-    <h1>Contact Me Form</h1>
-    <form id="contactForm" method="POST" action="/api/send">
-        <label>Name: </label>
-        <input required placeholder='Your Name' id="name" name="name" type="text"/>
-        <label>Email Address: </label>
-        <input type="email" required placeholder='Your Email' id="email" name="email"/>
-        <label>Message: </label>
-        <input required placeholder='Type Message Here' id="message" name="message" type="text"/>
-        <button>Send Message</button>
-    </form>
-    <p id="messageResults">Return message will show after colon:</p>
+    <div id="app">
+        <h1>Contact Me Form</h1>
+        <form id="contactForm" method="POST" action="/api/send">
+            <label>Name: </label>
+            <input required placeholder='Your Name' id="name" name="name" type="text"/>
+            <label>Email Address: </label>
+            <input type="email" required placeholder='Your Email' id="email" name="email"/>
+            <label>Message: </label>
+            <input required placeholder='Type Message Here' id="message" name="message" type="text"/>
+            <button id="submitButton">Send Message</button>
+        </form>
+        <p id="messageResults"></p>
+    </div>
 </body>
 </html>
