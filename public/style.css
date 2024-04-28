@@ -27,15 +27,24 @@ input {
     height: 2em;
 }
 
-button{
+button {
     font-size: 1em;
     font-weight: bold;
+    padding: .5em;
+    background-color: rgb(68, 75, 68);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: white;
 }
 
 button:hover {
-    background-color: orange;
+    background-color: rgb(36, 117, 210);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 button:active { 
     transform: scale(0.98);
+}
+
+a {
+    color:rgb(36, 117, 210);
 }
